@@ -1,0 +1,187 @@
+@media (max-width: 1440px) {
+    .header__bottom{
+        flex-direction: column;
+    }
+    .content{
+        flex-direction: column-reverse;
+    }
+    .content_bar{
+        max-width: 100%;
+    }
+    .top{
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-direction: column;
+    }
+    .bottom{
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-direction: column;
+    }
+    .side_bar{
+        height: 72px;
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid #000000;
+    }
+    .side_bar__menu_burger{
+        height: 70px;
+        width: 70px;
+        border: 0;
+    }
+    .side_bar__scroll_up{
+        display: none;
+    }
+    .about__top{
+        margin: 24px 0;
+    }
+    .about__top-label{
+        font-size: clamp(34px, 4vw, 110px);
+        line-height: 50px;
+    }
+    .about__bottom-item-img{
+        max-width: 100%;
+        margin-bottom: 24px;
+        max-height: 340px;
+    }
+    .about__bottom-item-text{
+        margin: 0;
+        width: 100%;font-size: clamp(21px, 2vw, 84px);
+    }
+    .about__bottom{
+        margin-top: 8px;
+    }
+    .visit_us__top{
+        margin-top: 56px;
+        position: relative;
+        padding-bottom: 144px;
+    }
+    [class*='visit_us__item_']{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .visit_us__item-label{
+        font-size: clamp(34px, 3.2vw, 136px);
+        line-height: 50px;
+        margin-bottom: 24px;
+    }
+    .visit_us__item-button{
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 150px);
+        margin: 16px auto 40px;
+    }
+    .visit_us__item-title, .visit_us__item-link{
+        font-size: clamp(21px, 1.7vw, 84px);
+    }
+    .dates__top{
+        padding-top: 56px;
+        padding-bottom: 0;
+    }
+    .dates__list{
+        flex-direction: column;
+    }
+    .dates__list-item{
+        width: 100%;
+        margin: 0 auto 56px;
+    }
+    .dates__list-item-title{
+        font-size: clamp(40px, 4vw, 160px);
+    }
+    .dates__list-item-sub_title{
+        margin-top: 16px;
+        font-size: clamp(20px, 2vw, 80px);
+    }
+    .panorama__item{
+        height: 440px;
+    }
+    .question {
+        padding-top: 56px;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .form{
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 124px;
+    }
+    .form-progress{
+        order: 1;
+        width: 100%;
+        padding: 0 16px 32px 16px;
+    }
+    .form-progress-title{
+        margin: 0 auto;
+    }
+    .form-blank{
+        padding: 32px;
+        order: 2;
+        width: 100%;
+        border-bottom: 0;
+    }
+    .question__top-form-button{
+        width: 256px;
+    }
+    .question__top-form-button_wrapper{
+        left: 0;
+        order: 3;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding: 0 calc(50% - 138px) 36px;
+        border: 10px solid #000000;
+        border-top: 0;
+    }
+    .events{
+        padding: 56px 0;
+    }
+    .events .events__title{
+        margin: 0;
+        text-align: center;
+    }
+    .cards{
+        justify-content: center;
+    }
+    .explore_at_home{
+        font-size: clamp(34px, 4vw, 136px);
+        line-height: 50px;
+    }
+    .footer{
+        padding: 56px 15px;
+    }
+    .footer__columns{
+        flex-direction: column;
+    }
+    [class*='footer__columns_']{
+        width: 290px;
+        margin: 0 auto;
+    }
+    .footer__columns_2 p.footer__columns-title{
+        display: none;
+    }
+    .footer__columns_3 p.footer__columns-title{
+        display: none;
+    }
+    .footer__columns_4 p.footer__columns-title{
+        display: none;
+    }
+    [class*='header__bottom-item_']{
+        margin-bottom: 40px;
+    }
+    .side_bar{
+        flex-direction: row;
+    }
+    .side_bar__menu_burger{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header__body{
+        padding-top: 8px;
+    }
+    .header__top-item-options-volume h3, .header__top-item-options-eye h3{
+        display: none;
+    }
+}
