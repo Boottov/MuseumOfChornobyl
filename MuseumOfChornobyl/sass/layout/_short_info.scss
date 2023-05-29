@@ -1,0 +1,25 @@
+.short_info{
+  &__label{
+    text-align: center;
+    @include fs40($ff_NumType, 500)
+  }
+  &__title{
+    margin-top: 25px;
+    @include fs21($ff_TimesNewRoman, 400)
+  }
+  &__item{
+    margin-top: 56px;
+  }
+  &__list{
+    display: flex;
+    padding-bottom: 56px;
+    @include xxs{
+      flex-direction: column;
+      align-items: center;
+    }
+    @include lg{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

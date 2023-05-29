@@ -1,0 +1,38 @@
+$base-fs:16px;
+
+$screen: (
+        xxs:0,
+        xs:320px,
+        sm:576px,
+        md:768px,
+        lg:1024px,
+        xl:1280px,
+        xxl:1440px
+
+);
+
+$paddings: (
+        xsL:15px,
+        xsR:15px,
+
+        smL:20px,
+        smR:20px,
+
+        mdL:40px,
+        mdR:40px,
+
+        lgL:60px,
+        lgR:80px,
+
+        xlL:120px,
+        xlR:120px,
+
+        xxlL:135px,
+        xxlR:150px,
+);
+
+$yellow: #DFBE22;
+$black: #000000;
+$white: #FFFFFF;
+$white_hot: #F5F3EA;
+$blue: #1C76B8;

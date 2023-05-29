@@ -1,0 +1,9 @@
+@import "../components/_questions_form.scss";
+
+.questions{
+  padding-bottom: 56px;
+  &__img{
+    height: 440px;
+    margin-bottom: 90px;
+  }
+}

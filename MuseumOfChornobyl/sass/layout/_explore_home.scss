@@ -1,0 +1,25 @@
+.explore_home{
+  &__item{
+    &-label{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      @include xxs{
+        @include fs34($ff_NumType, 500);
+      }
+      @include md{
+        @include fs110($ff_NumType, 500);
+      }
+    }
+    &-img{
+      position: relative;
+      height: 460px;
+      &_360{
+        width: 80px !important;
+        height: 80px !important;
+        position: absolute;
+        left: calc(50% - 40px);
+        top: calc(50% - 40px);
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+$footer_body-color: $black;
+$footer_text-color: $white_hot;
+
+.footer{
+  background: $footer_body-color;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    margin-top: 40px;
+    width: max-content;
+    &-label{
+      @include fs20($ff_NumType, 500);
+      color: $footer_text-color;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    &-title{
+      margin-top: 4px;
+      @include fs16($ff_TimesNewRoman, 400);
+      color: $footer_text-color;
+    }
+    &-developer{
+
+    }
+  }
+  @include xxs{
+    &__list{
+      padding-top: 6px;
+      padding-bottom: 56px;
+      flex-direction: column;
+    }
+    &__item{
+      &-links{
+        display: none;
+      }
+    }
+  }
+  @include md{
+    &__list{
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__item{
+      &-links{
+        display: initial;
+      }
+    }
+  }
+}

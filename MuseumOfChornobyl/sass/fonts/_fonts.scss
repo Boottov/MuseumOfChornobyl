@@ -1,0 +1,46 @@
+$ff_TimesNewRoman: "Times New Roman";
+$ff_NumType: "Num Type";
+$ff_Times: 'Times';
+
+@mixin fs16 ($font-family, $font-weight){
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: 1rem;
+  line-height: 1.43rem;
+  letter-spacing: 0.1rem;
+}
+@mixin fs20 ($font-family, $font-weight){
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.1rem;
+}
+@mixin fs21 ($font-family, $font-weight){
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: 1.31rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.1rem;
+}
+@mixin fs34 ($font-family, $font-weight){
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: 2.12rem;
+  line-height: 3.12rem;
+  letter-spacing: 0.1rem;
+}
+@mixin fs40 ($font-family, $font-weight){
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: 2.5rem;
+  line-height: 3.12rem;
+  letter-spacing: 0.1rem;
+}
+@mixin fs110 ($font-family, $font-weight){
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: 6.87rem;
+  line-height: 8.12rem;
+  letter-spacing: 0.1rem;
+}

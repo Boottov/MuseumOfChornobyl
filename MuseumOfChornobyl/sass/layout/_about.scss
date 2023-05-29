@@ -1,0 +1,59 @@
+$about_border-color: $black;
+
+.about{
+  padding-top: 30px;
+  padding-bottom: 56px;
+  &__label{
+
+  }
+  &__info{
+    &-title{
+      @include fs21($ff_TimesNewRoman, 400);
+    }
+    &-img{
+
+    }
+  }
+
+  @include xxs{
+    &__label{
+      @include fs34($ff_NumType, 500)
+    }
+    &__info{
+      &-title{
+      }
+      &-img{
+        margin: 24px 0;
+        height: 320px;
+      }
+    }
+  }
+  @include sm{
+    &__info{
+      &-img{
+        height: 490px;
+      }
+    }
+  }
+  @include md{
+    &__label{
+      @include fs40($ff_NumType, 500)
+    }
+  }
+  @include xl{
+    &__label{
+      @include fs110($ff_NumType, 500)
+    }
+    &__info{
+      &-title{
+        &_border{
+          padding-bottom: 24px;
+          border-bottom: 2px solid $about_border-color;
+          margin-bottom: 24px;
+        }
+      }
+      &-img{
+      }
+    }
+  }
+}

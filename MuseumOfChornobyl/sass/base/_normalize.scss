@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  list-style-type: none;
+}
+
+html{
+  font-size: $base-fs;
+}
+
+a{
+  text-decoration: none;
+}
+
+.body{
+  background: $white_hot;
+  &__inner{
+    min-width: map-get($screen, xs);
+    max-width: map-get($screen, xxl);
+
+    margin: auto;
+  }
+}
+
+.block-img{
+  overflow: hidden;
+  &>img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.block_sizer{
+  @include xxs{
+    padding-left: map-get($paddings, xsL) !important;
+    padding-right: map-get($paddings, xsR) !important;
+  }
+  @include xs{
+    padding-left: map-get($paddings, smL) !important;
+    padding-right: map-get($paddings, smR) !important;
+  }
+  @include sm{
+    padding-left: map-get($paddings, mdL) !important;
+    padding-right: map-get($paddings, mdR) !important;
+  }
+  @include md{
+    padding-left: map-get($paddings, lgL) !important;
+    padding-right: map-get($paddings, lgR) !important;
+  }
+  @include lg{
+    padding-left: map-get($paddings, xlL) !important;
+    padding-right: map-get($paddings, xlR) !important;
+  }
+  @include xl{
+    padding-left: map-get($paddings, xxlL) !important;
+    padding-right: map-get($paddings, xxlR) !important;
+  }
+}

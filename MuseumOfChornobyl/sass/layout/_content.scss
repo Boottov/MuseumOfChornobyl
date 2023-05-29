@@ -1,0 +1,11 @@
+.content{
+  &__wrapper{
+    position: relative;
+  }
+  @include xxs{
+    padding-top: 72px;
+  }
+  @include lg{
+    padding-top: 0;
+  }
+}

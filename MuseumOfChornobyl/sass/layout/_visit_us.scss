@@ -1,0 +1,34 @@
+$visit_us__background-color: $black;
+$visit_us__font-color: $white_hot;
+$visit_us__link-color: $blue;
+
+.visit_us{
+  display: flex;
+  flex-wrap: wrap;
+  background: $visit_us__background-color;
+  padding: 32px 0 72px;
+  &__item{
+    margin-top: 40px;
+    &-label{
+      color: $visit_us__font-color;
+      @include fs40($ff_NumType, 500);
+      margin-bottom: 50px;
+    }
+    &-title{
+      color: $visit_us__font-color;
+      @include fs21($ff_TimesNewRoman, 400);
+    }
+    &-link{
+      color: $visit_us__link-color;
+      @include fs21($ff_TimesNewRoman, 400);
+    }
+  }
+  @include xxs{
+    flex-direction: column;
+    align-items: center;
+  }
+  @include lg{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

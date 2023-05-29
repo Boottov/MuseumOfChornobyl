@@ -1,0 +1,43 @@
+$side_bar__border-color: $black;
+$side_bar__button-color: $white_hot;
+
+.side_bar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  @include xxs{
+    height: 72px;
+    width: 100%;
+    border-bottom: 2px solid $side_bar__border-color;
+  }
+  @include lg{
+    height: 100%;
+    width: 100px;
+    border-left: 2px solid $side_bar__border-color;
+    border-right: 2px solid $side_bar__border-color;
+  }
+  &_menu-button{
+    cursor: pointer;
+    background: $side_bar__button-color;
+    @include xxs{
+      width: 72px;
+      height: 72px;
+      position: absolute;
+      right: 0;
+    }
+    @include lg{
+      border-bottom: 2px solid $side_bar__border-color;
+      width: 100px;
+      height: 100px;
+    }
+    &_line{
+      width: 60%;
+      height: 4px;
+      background: $black;
+      margin: auto;
+      &:not(:first-child):not(:last-child){
+        margin: 16px auto;
+      }
+    }
+  }
+}

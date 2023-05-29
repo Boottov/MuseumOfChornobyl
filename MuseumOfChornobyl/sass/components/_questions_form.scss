@@ -1,0 +1,111 @@
+$form_border-color: $black;
+
+.questions__form{
+  padding: 70px;
+  border: 10px solid $form_border-color;
+  @include xxs{
+    order: 2;
+    padding: 20px 0 130px 0;
+  }
+  @include xs{
+    order: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @include sm{
+    order: 2;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include lg{
+    order: 1;
+  }
+  &_wrapper{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+    @include xxs{
+      flex-direction: column;
+    }
+
+    @include lg{
+      flex-direction: row;
+    }
+  }
+  &-task{
+    &-num_of_question{
+      @include fs20($ff_NumType, 500);
+      padding-bottom: 30px;
+      border-bottom: 2px solid #000000;
+      margin-bottom: 30px;
+    }
+    &-answer{
+      @include fs21($ff_TimesNewRoman, 400);
+    }
+  }
+  &-answers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 24px;
+    &-wrapper{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 16px;
+    }
+    &-answer{
+      @include fs21($ff_TimesNewRoman, 400);
+    }
+    &-checkbox{
+      height: 40px;
+      width: 40px;
+      margin-right: 20px;
+    }
+  }
+  &-what_you_know{
+    &-label{
+      @include fs40($ff_NumType, 500);
+      padding-bottom: 50px;
+      border-bottom: 2px solid $form_border-color;
+    }
+  }
+  &-progress{
+    margin-bottom: 40px;
+
+    &_wrapper{
+      justify-content: space-between;
+      @include xxs{
+        order: 1;
+        margin-left: 0;
+      }
+      @include lg{
+        order: 2;
+        margin-left: 70px;
+      }
+    }
+    &-label{
+      @include fs20($ff_NumType, 500);
+      margin: 24px 0 20px;
+    }
+    &_bar{
+      width: 100%;
+    }
+  }
+  &-button{
+    @include xxs{
+      position: absolute;
+      bottom: 36px;
+      left: calc(50% - 150px);
+    }
+    @include lg{
+      position: relative;
+      bottom: 0;
+      left: 0;
+    }
+    &>button{
+
+    }
+  }
+}
